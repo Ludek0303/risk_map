@@ -1,0 +1,16 @@
+{
+  "input_frames": 324,
+  "processing_seconds": 472.237,
+  "stage_seconds": {
+    "matching": 412.951,
+    "alignment": 18.773,
+    "texturing": 40.513
+  },
+  "width": 1256,
+  "height": 2177,
+  "camera_profile": "synthetic-cgo3",
+  "cpu": "Intel Core Ultra 5 225H",
+  "feature_match_cache_used": false,
+  "source_session": "captures/2026-09-06_214314",
+  "date": "2026-09-08"
+}

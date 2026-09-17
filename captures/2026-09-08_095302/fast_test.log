@@ -1,0 +1,38 @@
+Reading captures/2026-09-08_095302/mosaic_images
+Fast map: 180/468 spatially distributed images
+Features: 0/180
+Features: 50/180
+Features: 100/180
+Features: 150/180
+Projective matches: 0/1837, accepted 0
+Projective matches: 300/1837, accepted 65
+Projective matches: 600/1837, accepted 98
+Projective matches: 900/1837, accepted 175
+Projective matches: 1200/1837, accepted 249
+Projective matches: 1500/1837, accepted 362
+Projective matches: 1800/1837, accepted 416
+Connected reconstruction: 91/180 images; reference 79
+Bundle 1: median residual 0.00192 reference units
+Bundle 2: median residual 0.00122 reference units
+Bundle 3: median residual 0.00122 reference units
+Bundle 4: median residual 0.00122 reference units
+Bundle 5: median residual 0.00122 reference units
+Bundle 6: median residual 0.00122 reference units
+Bundle 7: median residual 0.00122 reference units
+Bundle 8: median residual 0.00122 reference units
+Bundle 9: median residual 0.00122 reference units
+Ground normal consistency: 0.38 degrees
+GPS anchoring: 89/91 inliers, median 1.06 m
+Metric bundle: 91 cameras, 4815 tracks, 15921 observations
+Metric observations with valid initial geometry: 15921/15921
+Metric bundle: median reprojection 0.87 px; GPS 1.12 m
+Metric bundle: median reprojection 0.52 px; GPS 1.13 m
+Metric bundle: median reprojection 0.48 px; GPS 1.08 m
+`ftol` termination condition is satisfied.
+Function evaluations 67, initial cost 8.8151e+04, final cost 5.7063e+03, first-order optimality 5.88e+01.
+Metric result: median reprojection 0.48 px, camera GPS error 1.02 m
+Cameras passing geometric quality checks: 89/91
+Views with broad geometric support: 86/89
+Texturing: 86 source views, 1256x2177 pixels
+Saved captures/2026-09-08_095302/fast_test/final_map.png; coverage 82.0%
+Map processing time: 155.8 s (2.60 min)

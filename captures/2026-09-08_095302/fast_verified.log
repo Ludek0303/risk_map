@@ -1,0 +1,91 @@
+Reading captures/2026-09-08_095302/mosaic_images
+Fast map: 220/468 spatially distributed images
+Features: 0/220
+Features: 50/220
+Features: 100/220
+Features: 150/220
+Features: 200/220
+Projective matches: 0/2229, accepted 0
+Projective matches: 300/2229, accepted 64
+Projective matches: 600/2229, accepted 98
+Projective matches: 900/2229, accepted 163
+Projective matches: 1200/2229, accepted 349
+Projective matches: 1500/2229, accepted 391
+Projective matches: 1800/2229, accepted 537
+Projective matches: 2100/2229, accepted 605
+Connected reconstruction: 147/220 images; reference 106
+Bundle 1: median residual 0.00160 reference units
+Bundle 2: median residual 0.00141 reference units
+Bundle 3: median residual 0.00126 reference units
+Bundle 4: median residual 0.00124 reference units
+Bundle 5: median residual 0.00123 reference units
+Bundle 6: median residual 0.00122 reference units
+Bundle 7: median residual 0.00121 reference units
+Bundle 8: median residual 0.00121 reference units
+Bundle 9: median residual 0.00121 reference units
+Bundle 10: median residual 0.00120 reference units
+Bundle 11: median residual 0.00120 reference units
+Bundle 12: median residual 0.00120 reference units
+Bundle 13: median residual 0.00120 reference units
+Bundle 14: median residual 0.00120 reference units
+Bundle 15: median residual 0.00120 reference units
+Bundle 16: median residual 0.00119 reference units
+Bundle 17: median residual 0.00119 reference units
+Bundle 18: median residual 0.00119 reference units
+Bundle 19: median residual 0.00119 reference units
+Bundle 20: median residual 0.00119 reference units
+Bundle 21: median residual 0.00119 reference units
+Bundle 22: median residual 0.00119 reference units
+Bundle 23: median residual 0.00119 reference units
+Bundle 24: median residual 0.00119 reference units
+Ground normal consistency: 0.51 degrees
+GPS anchoring: 132/147 inliers, median 1.26 m
+Metric bundle: 147 cameras, 7856 tracks, 25121 observations
+Metric observations with valid initial geometry: 23267/25121
+Metric bundle: median reprojection 1.84 px; GPS 1.24 m
+Metric bundle: median reprojection 0.70 px; GPS 1.20 m
+Metric bundle: median reprojection 0.60 px; GPS 1.19 m
+Metric bundle: median reprojection 0.54 px; GPS 1.19 m
+Metric bundle: median reprojection 0.46 px; GPS 0.98 m
+Metric bundle: median reprojection 0.46 px; GPS 0.98 m
+Metric bundle: median reprojection 0.46 px; GPS 0.96 m
+Metric bundle: median reprojection 0.46 px; GPS 0.97 m
+`ftol` termination condition is satisfied.
+Function evaluations 116, initial cost 2.7588e+05, final cost 7.8706e+03, first-order optimality 4.36e+01.
+Metric result: median reprojection 0.46 px, camera GPS error 0.97 m
+Cameras passing geometric quality checks: 126/147
+Views with broad geometric support: 124/126
+Texturing: 124 source views, 1256x2177 pixels
+Exposure and seams: 124 small previews
+Exposure block size: 128px (bounded equation count)
+Exposure complete; finding seams
+Blending tile 1/124
+Blending tile 26/124
+Blending tile 51/124
+Blending tile 76/124
+Blending tile 101/124
+Saved captures/2026-09-08_095302/fast_verified/final_map.png; coverage 93.8%
+Map processing time: 265.3 s (4.42 min)
+	Command being timed: "python3 -u rebuild_mosaic.py captures/2026-09-08_095302 --polygon missions/survey_45m_262x147_8min_area.json --align --fast --out captures/2026-09-08_095302/fast_verified/final_map.png"
+	User time (seconds): 299.37
+	System time (seconds): 27.96
+	Percent of CPU this job got: 123%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:25.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 627208
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 1555619
+	Voluntary context switches: 6774
+	Involuntary context switches: 698579
+	Swaps: 0
+	File system inputs: 11416
+	File system outputs: 8472
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

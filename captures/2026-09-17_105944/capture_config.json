@@ -1,0 +1,9 @@
+{
+  "image_source": "rtsp://192.168.144.25:8554/main.264",
+  "telemetry_source": "lr900-usb:/dev/ttyUSB0",
+  "camera_hfov_deg": 160.0,
+  "camera_make": "SIYI",
+  "camera_model": "RTSP-main.264",
+  "cropped_width_fraction": 1.0,
+  "synthetic_camera_realism": false
+}

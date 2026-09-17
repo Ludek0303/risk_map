@@ -1,0 +1,98 @@
+{
+  // Search Boundary 1 (NEW) — AKTYWNY
+  "area_points": [
+    [36.211822, -96.005545],
+    [36.211822, -96.002627],
+    [36.213147, -96.002627],
+    [36.213147, -96.005545]
+  ],
+
+  /*
+  // Search Boundary 2 — NIEAKTYWNY; odkomentuj ten blok po zakomentowaniu obszaru 1.
+  "area_points": [
+    [36.213469, -96.002635],
+    [36.215795, -96.002635],
+    [36.215795, -96.004286],
+    [36.213469, -96.004286]
+  ],
+  */
+
+  "_description": {
+    "format_punktu": "[LAT, LON] = [szerokość geograficzna, długość geograficzna], w stopniach GPS. Używaj kropki dziesiętnej.",
+    "pierwsza_liczba_LAT": "Szerokość geograficzna: dodatnia = północ (N), ujemna = południe (S).",
+    "druga_liczba_LON": "Długość geograficzna: dodatnia = wschód (E), ujemna = zachód (W).",
+    "przykład": "[47.397742, 8.545594] oznacza szerokość 47.397742° N i długość 8.545594° E. Wysokość lotu jest ustawiana osobno.",
+    "kolejność_punktów": "area_points: cztery narożniki aktywnego Search Boundary; lap_points: kolejność lotu; flight_boundary: kolejność po obwodzie.",
+    "misja": "Jedna misja: start → laps okrążeń → riskmapping w aktywnym area_points → powrót i lądowanie.",
+    "współrzędne_przykładowe": "flight_boundary, area_points i lap_points przepisano z danych użytkownika SUAS 2026 (Runway 2 Waypoints).",
+    "delay": "lap_delay_s: postój w sekundach w punktach pętli i po zmianie wysokości na jej końcu. riskmapping_delay_s: postój w punktach riskmappingu oraz w home przed lądowaniem. 0 = brak postoju. --settle-seconds nadpisuje obie wartości.",
+    "wysokość_AGL": "Podany zakres zawodów to 150–400 ft AGL = 45.72–121.92 m nad terenem. lap_altitude_ft/riskmapping_altitude_ft (oraz _m) to zawsze wysokość względem home (AGL), nie MSL — generator akceptuje obie jednostki (ft lub m, nie obie naraz), przelicza sam. lap_altitude_ft=200 zakłada elewację terenu ok. 700 ft MSL (przybliżenie regionalne, niezweryfikowane), żeby okrążenia i przelot do riskmappingu odbywały się w okolicach 900 ft MSL. riskmapping_altitude_ft=155 to wysokość AGL dla samego riskmappingu — generator zmienia wysokość dopiero po dolocie do pierwszego punktu obszaru, więc przelot z pętli nadal jest na 900 ft MSL. Raport JSON (i konsola) pokazują dla obu etapów zarówno AGL, jak i przeliczone MSL (na bazie home_alt_amsl), żeby od razu było widać, czy wysokości się zgadzają. Przed lotem sprawdź rzeczywistą elewację (GPS/wysokościomierz) — jeśli inna niż 700 ft, podaj ją przez --home-alt-amsl-ft przy generowaniu, żeby raport pokazał poprawne MSL.",
+    "wybór_obszaru": "Aktywny jest jeden blok area_points. Aby wybrać Search Boundary 2, zakomentuj blok 1 przez /* ... */ i odkomentuj blok 2. Plik używa JSON z komentarzami obsługiwanymi przez generator."
+  },
+  "lap_points": [
+    [36.2187499, -96.0027362],
+    [36.2114374, -96.0027516],
+    [36.2114893, -96.0064316],
+    [36.2142680, -96.0093499],
+    [36.2170466, -96.0122681],
+    [36.2186393, -96.0121286],
+    [36.2194875, -96.0099721],
+    [36.2198857, -96.0076332],
+    [36.2195914, -96.0051012],
+    [36.2187431, -96.0027409]
+  ],
+  "laps": 6,
+  "flight_boundary": [
+    [
+      36.2193143935478,
+      -96.00171089172362
+    ],
+    [
+      36.2203876816226,
+      -96.0041356086731
+    ],
+    [
+      36.2208031440207,
+      -96.006817817688
+    ],
+    [
+      36.2205954130975,
+      -96.0094571113586
+    ],
+    [
+      36.2198164172223,
+      -96.0118174552917
+    ],
+    [
+      36.2181891563676,
+      -96.0142421722412
+    ],
+    [
+      36.2149951257415,
+      -96.0109269618988
+    ],
+    [
+      36.2128397305797,
+      -96.0107660293579
+    ],
+    [
+      36.2128051052733,
+      -96.00916743278502
+    ],
+    [
+      36.2106063669373,
+      -96.0092425346375
+    ],
+    [
+      36.2106583063506,
+      -96.0017323493958
+    ]
+  ],
+  "lap_altitude_ft": 200,
+  "riskmapping_altitude_ft": 155,
+  "lap_speed_m_s": 3,
+  "riskmapping_speed_m_s": 3,
+  "transfer_speed_m_s": 3,
+  "lap_delay_s": 3,
+  "riskmapping_delay_s": 3
+}

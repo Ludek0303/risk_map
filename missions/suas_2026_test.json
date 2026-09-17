@@ -1,0 +1,56 @@
+{
+  "output_format": "mission-planner",
+  "flight_boundary": [
+    [
+      47.3974,
+      8.5448
+    ],
+    [
+      47.3974,
+      8.5475
+    ],
+    [
+      47.4001,
+      8.5475
+    ],
+    [
+      47.4001,
+      8.5448
+    ]
+  ],
+  "fence_file": "missions/suas_2026_test_fence.waypoints",
+  "autopilot": "arducopter",
+  "settle_seconds": 3.0,
+  "lines": 10,
+  "line_spacing_m": 15.46342424129084,
+  "conservative_footprint_m": 78.85654165597062,
+  "sidelap_min": 0.8039043569935707,
+  "frontlap_min": 0.9365937194936391,
+  "capture_interval_m": 5.0,
+  "speed_m_s": 3,
+  "lap_speed_m_s": 3,
+  "riskmapping_speed_m_s": 3,
+  "riskmapping_altitude_m": 45,
+  "transfer_speed_m_s": 3,
+  "transfer_horizontal_distance_m": 50.31266514812125,
+  "lap_horizontal_distance_m": 410.14091034693007,
+  "estimated_horizontal_seconds": 793.3987403704218,
+  "altitude_m": 45,
+  "horizontal_distance_m": 2380.1962211112655,
+  "estimated_flight_seconds": 964.3987403704218,
+  "assumed_horizontal_accel_m_s2": null,
+  "acceleration_allowance_seconds": 0.0,
+  "laps": 3,
+  "lap_waypoints": 16,
+  "survey_start_item_id": 19,
+  "lap_altitude_m": 45,
+  "vertical_distance_m": 90,
+  "estimated_survey_photos": 281,
+  "test_only": true,
+  "home_source": "Example coordinates for Mission Planner import testing; not live GPS",
+  "planned_home": [
+    47.397742,
+    8.545594,
+    500.0
+  ]
+}

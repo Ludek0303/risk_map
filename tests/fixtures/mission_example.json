@@ -1,0 +1,78 @@
+{
+  "_description": {
+    "format_punktu": "[LAT, LON] = [szerokość geograficzna, długość geograficzna], w stopniach GPS. Używaj kropki dziesiętnej.",
+    "pierwsza_liczba_LAT": "Szerokość geograficzna: dodatnia = północ (N), ujemna = południe (S).",
+    "druga_liczba_LON": "Długość geograficzna: dodatnia = wschód (E), ujemna = zachód (W).",
+    "przykład": "[47.397742, 8.545594] oznacza szerokość 47.397742° N i długość 8.545594° E. Wysokość lotu jest ustawiana osobno.",
+    "kolejność_punktów": "area_points: cztery narożniki w dowolnej kolejności; lap_points: kolejność lotu; flight_boundary: kolejność po obwodzie.",
+    "misja": "Jedna ciągła misja SUAS 2026: start → laps pełnych okrążeń po lap_points → przelot → riskmapping w area_points → powrót i lądowanie.",
+    "współrzędne_przykładowe": "Wpisz własne punkty terenu zawodów. Te współrzędne są demonstracyjne, nie pochodzą z regulaminu SUAS 2026.",
+    "delay": "lap_delay_s: postój w sekundach w punktach pętli i po zmianie wysokości na jej końcu. riskmapping_delay_s: postój w punktach riskmappingu oraz w home przed lądowaniem. 0 = brak postoju. --settle-seconds nadpisuje obie wartości."
+  },
+  "area_points": [
+    [
+      47.3981,
+      8.5452
+    ],
+    [
+      47.3982,
+      8.5471
+    ],
+    [
+      47.3998,
+      8.5469
+    ],
+    [
+      47.3996,
+      8.5454
+    ]
+  ],
+  "lap_points": [
+    [
+      47.397742,
+      8.545594
+    ],
+    [
+      47.397742,
+      8.5461
+    ],
+    [
+      47.39795,
+      8.5461
+    ],
+    [
+      47.39795,
+      8.545594
+    ],
+    [
+      47.39785,
+      8.5454
+    ]
+  ],
+  "laps": 3,
+  "flight_boundary": [
+    [
+      47.3974,
+      8.5448
+    ],
+    [
+      47.3974,
+      8.5475
+    ],
+    [
+      47.4001,
+      8.5475
+    ],
+    [
+      47.4001,
+      8.5448
+    ]
+  ],
+  "lap_altitude_m": 45,
+  "riskmapping_altitude_m": 45,
+  "lap_speed_m_s": 3,
+  "riskmapping_speed_m_s": 3,
+  "transfer_speed_m_s": 3,
+  "lap_delay_s": 3,
+  "riskmapping_delay_s": 3
+}

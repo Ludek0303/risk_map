@@ -1,0 +1,79 @@
+Reading captures/2026-09-08_095302/mosaic_images
+Loading verified feature-match cache
+Connected reconstruction: 430/468 images; reference 209
+Bundle 1: median residual 0.00230 reference units
+Bundle 2: median residual 0.00208 reference units
+Bundle 3: median residual 0.00188 reference units
+Bundle 4: median residual 0.00169 reference units
+Bundle 5: median residual 0.00150 reference units
+Bundle 6: median residual 0.00127 reference units
+Bundle 7: median residual 0.00117 reference units
+Bundle 8: median residual 0.00117 reference units
+Bundle 9: median residual 0.00117 reference units
+Bundle 10: median residual 0.00117 reference units
+Bundle 11: median residual 0.00117 reference units
+Bundle 12: median residual 0.00117 reference units
+Bundle 13: median residual 0.00117 reference units
+Bundle 14: median residual 0.00117 reference units
+Bundle 15: median residual 0.00117 reference units
+Bundle 16: median residual 0.00117 reference units
+Bundle 17: median residual 0.00117 reference units
+Bundle 18: median residual 0.00117 reference units
+Bundle 19: median residual 0.00117 reference units
+Bundle 20: median residual 0.00117 reference units
+Bundle 21: median residual 0.00117 reference units
+Bundle 22: median residual 0.00117 reference units
+Bundle 23: median residual 0.00117 reference units
+Bundle 24: median residual 0.00117 reference units
+Ground normal consistency: 0.84 degrees
+GPS anchoring: 367/430 inliers, median 1.35 m
+Metric bundle: 430 cameras, 26388 tracks, 95883 observations
+Metric observations with valid initial geometry: 88523/95883
+Metric bundle: median reprojection 3.24 px; GPS 1.82 m
+Metric bundle: median reprojection 1.12 px; GPS 1.73 m
+Metric bundle: median reprojection 0.87 px; GPS 1.74 m
+Metric bundle: median reprojection 0.68 px; GPS 1.68 m
+Metric bundle: median reprojection 0.64 px; GPS 1.67 m
+Metric bundle: median reprojection 0.58 px; GPS 1.68 m
+Metric bundle: median reprojection 0.51 px; GPS 1.65 m
+Metric bundle: median reprojection 0.50 px; GPS 1.60 m
+Metric bundle: median reprojection 0.50 px; GPS 1.57 m
+Metric bundle: median reprojection 0.50 px; GPS 1.55 m
+Metric bundle: median reprojection 0.50 px; GPS 1.54 m
+Metric bundle: median reprojection 0.50 px; GPS 1.52 m
+Metric bundle: median reprojection 0.50 px; GPS 1.51 m
+Metric bundle: median reprojection 0.50 px; GPS 1.51 m
+Metric bundle: median reprojection 0.50 px; GPS 1.51 m
+Metric bundle: median reprojection 0.50 px; GPS 1.51 m
+Metric bundle: median reprojection 0.50 px; GPS 1.50 m
+Metric bundle: median reprojection 0.50 px; GPS 1.49 m
+Metric bundle: median reprojection 0.50 px; GPS 1.49 m
+Metric bundle: median reprojection 0.50 px; GPS 1.49 m
+Metric bundle: median reprojection 0.50 px; GPS 1.49 m
+The maximum number of function evaluations is exceeded.
+Function evaluations 300, initial cost 3.2005e+06, final cost 6.2508e+04, first-order optimality 3.03e+02.
+Metric result: median reprojection 0.50 px, camera GPS error 1.49 m
+Cameras passing geometric quality checks: 395/430
+Views with broad geometric support: 376/395
+Texturing: 376 source views, 1256x2177 pixels
+Exposure and seams: 376 small previews
+Exposure block size: 256px (bounded equation count)
+Exposure complete; finding seams
+Blending tile 1/376
+Blending tile 26/376
+Blending tile 51/376
+Blending tile 76/376
+Blending tile 101/376
+Blending tile 126/376
+Blending tile 151/376
+Blending tile 176/376
+Blending tile 201/376
+Blending tile 226/376
+Blending tile 251/376
+Blending tile 276/376
+Blending tile 301/376
+Blending tile 326/376
+Blending tile 351/376
+Blending tile 376/376
+Saved captures/2026-09-08_095302/final_map.png; coverage 99.9%
+Map processing time: 283.8 s (4.73 min)

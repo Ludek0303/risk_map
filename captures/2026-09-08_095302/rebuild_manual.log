@@ -1,0 +1,35 @@
+Reading captures/2026-09-08_095302/mosaic_images
+Loading verified feature-match cache
+Connected reconstruction: 430/468 images; reference 209
+Bundle 1: median residual 0.00230 reference units
+Bundle 2: median residual 0.00208 reference units
+Bundle 3: median residual 0.00188 reference units
+Bundle 4: median residual 0.00169 reference units
+Bundle 5: median residual 0.00150 reference units
+Bundle 6: median residual 0.00127 reference units
+Bundle 7: median residual 0.00117 reference units
+Bundle 8: median residual 0.00117 reference units
+Bundle 9: median residual 0.00117 reference units
+Bundle 10: median residual 0.00117 reference units
+Bundle 11: median residual 0.00117 reference units
+Bundle 12: median residual 0.00117 reference units
+Bundle 13: median residual 0.00117 reference units
+Bundle 14: median residual 0.00117 reference units
+Bundle 15: median residual 0.00117 reference units
+Bundle 16: median residual 0.00117 reference units
+Bundle 17: median residual 0.00117 reference units
+Bundle 18: median residual 0.00117 reference units
+Bundle 19: median residual 0.00117 reference units
+Bundle 20: median residual 0.00117 reference units
+Traceback (most recent call last):
+  File "/home/ludek/projects/drones/risk_map/rebuild_mosaic.py", line 95, in <module>
+    main()
+  File "/home/ludek/projects/drones/risk_map/rebuild_mosaic.py", line 61, in main
+    build_orthomosaic(records, GpsPolygon.load(args.polygon), args.resolution,
+  File "/home/ludek/projects/drones/risk_map/orthomosaic.py", line 259, in build_orthomosaic
+    poses = bundle(poses, root, edges, iterations=24)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ludek/projects/drones/risk_map/orthomosaic.py", line 229, in bundle
+    ok, delta = cv2.solve(normal, rhs, flags=cv2.DECOMP_CHOLESKY)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

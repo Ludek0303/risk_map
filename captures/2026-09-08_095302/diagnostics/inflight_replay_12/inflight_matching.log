@@ -1,0 +1,14 @@
+Features ready: 1; queued pairs: 0
+Features ready: 2; queued pairs: 1
+Features ready: 3; queued pairs: 3
+Features ready: 4; queued pairs: 6
+Features ready: 5; queued pairs: 10
+Features ready: 6; queued pairs: 15
+Features ready: 7; queued pairs: 21
+Features ready: 8; queued pairs: 28
+Features ready: 9; queued pairs: 36
+Features ready: 10; queued pairs: 45
+Features ready: 11; queued pairs: 55
+Features ready: 12; queued pairs: 66
+Pairs ready: 50; accepted: 42; queued: 16
+In-flight worker stopped; completed work is saved for final reconstruction

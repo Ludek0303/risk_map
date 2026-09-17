@@ -5,7 +5,6 @@ import math
 from pathlib import Path
 
 import cv2
-import numpy as np
 import piexif
 
 from area import GpsPolygon
@@ -29,10 +28,16 @@ def main():
     parser.add_argument("--estimate-heading", action="store_true",
                         help="Allow approximate course-derived headings for old sessions without EXIF heading.")
     parser.add_argument("--resolution", type=float, default=8.0)
-    parser.add_argument("--align", action="store_true", help="Globally align matching image features before compositing")
+    parser.add_argument("--align", action="store_true", help="Reconstruct a ground plane and blend seams using image features")
+    parser.add_argument("--fast", action="store_true",
+                        help="Use up to 220 spatially distributed frames and indexed feature search; requires --align")
+    parser.add_argument("--camera-profile", choices=("none", "synthetic-cgo3"), default="none",
+                        help="Explicit lens/vignette correction for camera_realism.py images only")
     parser.add_argument("--hfov", type=float, default=114.6)
     parser.add_argument("--cropped-width-fraction", type=float, default=0.8)
     args = parser.parse_args()
+    if args.fast and not args.align:
+        parser.error("--fast requires --align")
     records = []
     images_dir = args.session / "mosaic_images"
     if not images_dir.is_dir():
@@ -53,6 +58,14 @@ def main():
         records.append((path, lat, lon, altitude, heading))
     if not records:
         parser.error("No JPEGs found in session/images")
+    if args.align:
+        from orthomosaic import build_orthomosaic
+        # Camera headings are recovered visually; old sessions need no guessed
+        # course, and stationary photos can still contribute to reconstruction.
+        build_orthomosaic(records, GpsPolygon.load(args.polygon), args.resolution,
+                          args.camera_profile, args.cropped_width_fraction,
+                          args.out, args.hfov, fast=args.fast)
+        return
     missing = sum(r[4] is None for r in records)
     if missing and not args.estimate_heading:
         parser.error("Missing EXIF headings; --estimate-heading explicitly enables an approximate reconstruction")
@@ -72,29 +85,14 @@ def main():
                 parser.error(f"{path}: cannot estimate heading from stationary positions")
             heading = math.degrees(math.atan2(east, north)) % 360
         records[i] = (path, lat, lon, altitude, heading)
-    poses = shapes = usable = None
-    if args.align:
-        from align_mosaic import align_frames
-        poses, shapes, usable = align_frames(records, mosaic._area, args.hfov, args.cropped_width_fraction)
     for i, (path, lat, lon, altitude, heading) in enumerate(records):
-        if usable is not None and not usable[i]:
-            continue
         frame = cv2.imread(str(path))
         if frame is None:
             parser.error(f"Unreadable image: {path}")
-        if poses is None:
-            mosaic.update(frame, lat, lon, altitude, heading)
-        else:
-            a, b, east, south = poses[i]
-            h, w = shapes[i]
-            linear = np.array([[a, -b], [b, a]]) * args.resolution / (w / 2)
-            center = np.array([east - mosaic._min_e, south + mosaic._max_n]) * args.resolution
-            matrix = np.column_stack((linear, center - linear @ np.array([w / 2, h / 2])))
-            mosaic.update_projected(frame, matrix)
+        mosaic.update(frame, lat, lon, altitude, heading)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     mosaic.save(args.out)
-    used = len(records) if usable is None else int(usable.sum())
-    print(f"Saved {args.out} ({used}/{len(records)} frames used)")
+    print(f"Saved {args.out} ({len(records)} frames used)")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,10 @@
+{
+  "connected_frames": 164,
+  "texture_frames": 155,
+  "gps_median_error_m": 7.651200216370798,
+  "coverage_fraction": 0.9472042693006504,
+  "width": 1256,
+  "height": 2177,
+  "camera_profile": "synthetic-cgo3",
+  "model": "single ground plane; not a dense 3D ODM reconstruction"
+}

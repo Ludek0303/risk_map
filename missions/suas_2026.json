@@ -1,0 +1,85 @@
+{
+  "output_format": "mission-planner",
+  "flight_boundary": [
+    [
+      36.2193143935478,
+      -96.00171089172362
+    ],
+    [
+      36.2203876816226,
+      -96.0041356086731
+    ],
+    [
+      36.2208031440207,
+      -96.006817817688
+    ],
+    [
+      36.2205954130975,
+      -96.0094571113586
+    ],
+    [
+      36.2198164172223,
+      -96.0118174552917
+    ],
+    [
+      36.2181891563676,
+      -96.0142421722412
+    ],
+    [
+      36.2149951257415,
+      -96.0109269618988
+    ],
+    [
+      36.2128397305797,
+      -96.0107660293579
+    ],
+    [
+      36.2128051052733,
+      -96.00916743278502
+    ],
+    [
+      36.2106063669373,
+      -96.0092425346375
+    ],
+    [
+      36.2106583063506,
+      -96.0017323493958
+    ]
+  ],
+  "fence_file": "/home/ludek/projects/drones/risk_map/missions/suas_2026_fence.waypoints",
+  "autopilot": "arducopter",
+  "settle_seconds": 3,
+  "lap_delay_s": 3,
+  "riskmapping_delay_s": 3,
+  "total_delay_seconds": 291,
+  "lines": 17,
+  "line_spacing_m": 16.12945167832595,
+  "conservative_footprint_m": 82.78885453321502,
+  "sidelap_min": 0.8051736339478548,
+  "frontlap_min": 0.82,
+  "capture_interval_m": 14.901993815978708,
+  "speed_m_s": 3,
+  "lap_speed_m_s": 3,
+  "riskmapping_speed_m_s": 3,
+  "riskmapping_altitude_m": 47.244,
+  "transfer_speed_m_s": 3,
+  "transfer_horizontal_distance_m": 625.7635355807473,
+  "lap_horizontal_distance_m": 18707.972761004574,
+  "estimated_horizontal_seconds": 7532.658986245858,
+  "altitude_m": 47.244,
+  "horizontal_distance_m": 22597.976958737574,
+  "estimated_flight_seconds": 7904.938986245857,
+  "assumed_horizontal_accel_m_s2": null,
+  "acceleration_allowance_seconds": 0.0,
+  "laps": 6,
+  "lap_waypoints": 11,
+  "survey_start_item_id": 16,
+  "lap_altitude_m": 60.96,
+  "vertical_distance_m": 121.92,
+  "estimated_survey_photos": 170,
+  "home_alt_amsl_ft": 700.0,
+  "lap_altitude_agl_ft": 200.0,
+  "lap_altitude_msl_ft": 900.0,
+  "riskmapping_altitude_agl_ft": 155.0,
+  "riskmapping_altitude_msl_ft": 855.0
+}

@@ -1,0 +1,5 @@
+# Offline reconstruction; Gazebo and pymavlink are only needed for capture.
+numpy>=1.26
+scipy>=1.11
+opencv-python>=4.6
+piexif>=1.1.3

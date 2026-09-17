@@ -1,0 +1,10 @@
+{
+  "input_photos": 12,
+  "background_seconds": 5.392404718999842,
+  "offline_matching_seconds": 0.09573164299990822,
+  "accepted_pairs": 50,
+  "reuse": {
+    "feature_cache_hits": 12,
+    "pair_cache_hits": 66
+  }
+}
